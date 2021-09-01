@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slides</title>
+    <link>http://iboulangeat.github.io/FateHD/slides/</link>
+    <description>Recent content on Slides</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="http://iboulangeat.github.io/FateHD/slides/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FATE soil</title>
+      <link>http://iboulangeat.github.io/FateHD/slides/fatesoil/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://iboulangeat.github.io/FateHD/slides/fatesoil/</guid>
+      <description>layout: true .footer[ - iboulangeat - 2019 ] class: title, smokescreen, no-footer background-image: url(Foto0020.jpg)
+Plant and soil interactions class: col-2
+Fundamental hypothesis class: img-right
+Objective and fundamental hypothesis Objective: Improve the modeling of plant succession by integrating a dynamic soil general property.
+Hypotheses: Berendse 1998, Biogeochemistry
+ Soil composition evolve during the succession: Nitrogen, soil moisture, organic matter,C:P, N:P, C:N,&amp;hellip; increases. This is partly due to litter decomposition  class:</description>
+    </item>
+    
+    <item>
+      <title>FATE-HD model</title>
+      <link>http://iboulangeat.github.io/FateHD/slides/fatehd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://iboulangeat.github.io/FateHD/slides/fatehd/</guid>
+      <description>layout: true .footer[ - iboulangeat - 2019 ] class: title, smokescreen, no-footer background-image: url(abandon.gif)
+FATE-HD, a landscape simulation model class: compact, img-left
+FATE-HD, an hybrid model FATE-HD among DVMs .absolute.r-2.b-2[Boulangeat et al. 2014, GCB]
+&amp;ndash;
+A landscape model dealing with forest and non-forests
+ Response to climate (via Habitat model) Vegetation diversity (PFG) Simpified population dynamics (competition for light, dispersal, demography) Semi-quantitatif (easy to parameterize) Disturbances (fire, grazing, mowing)  class:</description>
+    </item>
+    
+    <item>
+      <title>Plant functional groups</title>
+      <link>http://iboulangeat.github.io/FateHD/slides/pfg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://iboulangeat.github.io/FateHD/slides/pfg/</guid>
+      <description>layout: true .footer[ - iboulangeat - 2019 ] class: title, smokescreen, no-footer background-image: url(ruisseau_adret.JPG)
+Functional groups of plants class:
+Objective: reduce dimentionality class:
+The workflow class:img-right, roomy
+Trait selection How to choose the most important species traits ?
+.absolute.r-2.b-2[Boulangeat et al. 2012, GCB]
+class:
+Trait selection Application in the Ecrins National Parc .absolute.r-2.b-2[Boulangeat et al. 2012, GCB]
+class:
+Optimize classification .absolute.r-2.b-2[Boulangeat et al. 2012, GCB]
+class:
+Plant functional groups in the Ecrins .</description>
+    </item>
+    
+  </channel>
+</rss>

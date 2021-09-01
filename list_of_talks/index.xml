@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>List_of_talks on Slides</title>
+    <link>http://iboulangeat.github.io/FateHD/list_of_talks/</link>
+    <description>Recent content in List_of_talks on Slides</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="http://iboulangeat.github.io/FateHD/list_of_talks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FATE and soil</title>
+      <link>http://iboulangeat.github.io/FateHD/slides/fatesoil/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://iboulangeat.github.io/FateHD/slides/fatesoil/</guid>
+      <description>Premises of a soil module</description>
+    </item>
+    
+    <item>
+      <title>Plant functional groups</title>
+      <link>http://iboulangeat.github.io/FateHD/slides/pfg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://iboulangeat.github.io/FateHD/slides/pfg/</guid>
+      <description>How to make plant functional groups</description>
+    </item>
+    
+    <item>
+      <title>The model FATE-HD</title>
+      <link>http://iboulangeat.github.io/FateHD/slides/fatehd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://iboulangeat.github.io/FateHD/slides/fatehd/</guid>
+      <description>Presentation of the model FATE-HD</description>
+    </item>
+    
+  </channel>
+</rss>

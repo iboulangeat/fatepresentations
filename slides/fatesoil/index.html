@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>FATE soil</title>
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://iboulangeat.github.io/FateHD/index.xml">
+		<link rel="canonical" href="http://iboulangeat.github.io/FateHD/slides/fatesoil/">
+		
+		<link rel="shortcut icon" type="image/png" href="http://iboulangeat.github.io/FateHD/apple-touch-icon-precomposed.png">
+		
+		
+		<meta name="generator" content="Hugo 0.52" />
+
+		
+		<meta property="og:title" content="FATE soil" />
+		<meta property="og:type" content="article" />
+		<meta property="og:image" content="http://iboulangeat.github.io/FateHD" />
+		<meta property="og:description" content="" />
+		<meta property="og:url" content="http://iboulangeat.github.io/FateHD/slides/fatesoil/" />
+		<meta property="og:site_name" content="FATE soil" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@DrIsaBlg" />
+
+
+		
+					<link rel="stylesheet" type="text/css" href="http://iboulangeat.github.io/FateHD/css/apron.css"></style>
+					<link rel="stylesheet" type="text/css" href="http://iboulangeat.github.io/FateHD/css/descartes.css"></style>
+					<link rel="stylesheet" type="text/css" href="http://iboulangeat.github.io/FateHD/css/adirondack.css"></style><style type="text/css">
+		 
+		@page {
+				  size:  1216px 684px; 
+				  margin: 0;
+		}
+		</style>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i|Quattrocento:400,700|Spectral:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>
+		<script src="http://iboulangeat.github.io/FateHD/js/auto-render.min.js"></script> 
+		<script src="http://iboulangeat.github.io/FateHD/js/story.js"></script>
+
+	</head>
+	<body class="ma0 bg-white section-slides page-kind-page is-page-true  feature-nohdr feature-math feature-math feature-nohighlight">
+		
+  
+
+		<main role="main">
+		
+    <textarea id="source">layout: true
+.footer[
+&lt;!-- - @DrIsaBlg --&gt;
+- &lt;i class=&#34;fab fa-github&#34;&gt;&lt;/i&gt;iboulangeat
+&lt;!-- - isabelle.boulangeat@irstea.fr --&gt;
+- 2019
+&lt;!-- - ![logo](/img/logo.jpg) --&gt;
+]
+&lt;!--  --&gt;
+
+---
+class: title, smokescreen, no-footer
+background-image: url(Foto0020.jpg)
+# Plant and soil interactions
+---
+class: col-2
+# Fundamental hypothesis
+![Image](b1.png#)
+![Image](b2.png#)
+
+---
+class: img-right
+# Objective and fundamental hypothesis
+![Image](successionSoil.png#)
+
+Objective: Improve the modeling of plant succession by integrating a dynamic **soil general property**.
+
+Hypotheses:
+&lt;sub&gt;&lt;sub&gt;&lt;sub&gt;Berendse 1998, Biogeochemistry&lt;/sub&gt;&lt;/sub&gt;&lt;/sub&gt;
+
+1. Soil composition evolve during the succession: Nitrogen, soil moisture, organic matter,C:P, N:P, C:N,... increases.
+2. This is partly due to litter decomposition
+
+---
+class:
+# Rationale
+&gt;&gt; Conceptual frameworks describing mechanisms of primary succession should acknowledge soil conditioning by previous plants as a potential mechanism of positive feedback &lt;sub&gt;&lt;sub&gt;&lt;sub&gt;Castle et al. 2015, JoE&lt;/sub&gt;&lt;/sub&gt;&lt;/sub&gt;
+
+- With the arrival of **new species**, the soil is progressively **enriched** depending on each species specific **contribution** and thus potentially **becomes suitable** for late successional species.
+
+- After a while, **pioneer species**, which are not competitive enough to survive in rich soils **are excluded** or highly limited in abundance (without any competition for light involved)
+---
+class:
+# The algorithm
+- bare soil has a default value
+- soil value changes from year to year: a **community weighted mean** based on each species specific **soil contribution parameter** and **cover**.
+- Each PFG (or species) has a **specific tolerance** with respect to three levels of soil “richness” leading to **mortality**
+&lt;br&gt;&lt;br&gt;Secondary succession:
+- After a disturbance, the **&#34;bare&#34; soil default value** is set according to the composition of the **community before the disturbance**, until the pixel reaches again is full cover.
+-  There is an option to set a specific default value after a particular disturbance.
+---
+class:
+# Test in a pixel: Glacier Bay (primary succession)
+![Image](img_GB.jpg# relative w-90pct)
+---
+class:
+# Test in a pixel: Glacier Bay (primary succession)
+![Image](GB_Chapin2.png# relative w-90pct)
+
+---
+class: col-2
+# Test in a pixel: Glacier Bay (primary succession)
+![Image](GBparams.png# relative w-100pct t-4)
+![Image](gbSimu.png# relative w-100pct)
+
+---
+class:
+# Remarks
+
+This plant-soil interaction represents a **proxy for a number of different mechanisms** of soil modification, just like competition for light synthesizes multiple processes (cf. canopy effect).
+
+Questions:
+- what are the **best foliar traits** to represent contributions and tolerances?
+  - plant and soil N:P ratios are decoupled (i.e. not related) along the ecological succession&lt;sub&gt;&lt;sub&gt;&lt;sub&gt;Di Palo 2017, PloS one ; see also Wardle et al. 2009, FuncEcol&lt;/sub&gt;&lt;/sub&gt;&lt;/sub&gt;
+
+- Is there the same gradient in secondary succession than primary succession? How to deal with nitrogen deposits?
+
+
+---
+
+class: no-footer
+background-image: url(marais_acide_lautaret.JPG)
+# Thanks
+Damien, Ceres, Marta, Maya, Wilfried, Tamara
+</textarea>
+    <script type="text/javascript" src="http://iboulangeat.github.io/FateHD/js/qrcode.js"></script>
+    <script src="http://iboulangeat.github.io/FateHD/js/remark.js"></script>
+    <script>
+      var slideshow = remark.create({
+          ratio: "16:9", 
+         navigation: {
+            scroll: false
+         },
+         countIncrementalSlides: false,
+         slideNumberFormat: '%current%',
+			highlightLanguage: "xaprb",
+			placeholder: "dummy value to end the list without a comma"
+      });
+
+		
+		
+		$(".remark-slide-content.fit-h1 h1").each(function(i, e) {
+			var $e = $(e);
+			var $p = $e.closest('div.remark-slide-container');
+			var needsToggle = !$p.hasClass('remark-visible');
+			if ( needsToggle ) $p.toggleClass('remark-visible');
+			while (e.scrollHeight > e.clientHeight + 1 && $e.css('font-size') != '1px') {
+				$e.css('font-size', (parseInt($e.css('font-size')) - 1) + "px");
+				
+				
+			}
+			if ( needsToggle ) $p.toggleClass('remark-visible');
+		});
+
+		$( function() {
+			if ( $( "body.feature-qrcode:not(.feature-noqrcode)" ).length ) {
+				if ( $( ".qrcode" ).length ) {
+					new QRCode($(".qrcode")[0], {
+						"useSVG": true,
+						"text": window.location.href.replace(/#\d*$/, "")
+					});
+				}
+			}
+		});
+
+    </script>
+
+		</main>
+		
+  
+
+		
+		
+  
+
+	
+	
+	</body>
+</html>

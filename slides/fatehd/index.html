@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>FATE-HD model</title>
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://iboulangeat.github.io/FateHD/index.xml">
+		<link rel="canonical" href="http://iboulangeat.github.io/FateHD/slides/fatehd/">
+		
+		<link rel="shortcut icon" type="image/png" href="http://iboulangeat.github.io/FateHD/apple-touch-icon-precomposed.png">
+		
+		
+		<meta name="generator" content="Hugo 0.52" />
+
+		
+		<meta property="og:title" content="FATE-HD model" />
+		<meta property="og:type" content="article" />
+		<meta property="og:image" content="http://iboulangeat.github.io/FateHD" />
+		<meta property="og:description" content="" />
+		<meta property="og:url" content="http://iboulangeat.github.io/FateHD/slides/fatehd/" />
+		<meta property="og:site_name" content="FATE-HD model" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@DrIsaBlg" />
+
+
+		
+					<link rel="stylesheet" type="text/css" href="http://iboulangeat.github.io/FateHD/css/apron.css"></style>
+					<link rel="stylesheet" type="text/css" href="http://iboulangeat.github.io/FateHD/css/descartes.css"></style>
+					<link rel="stylesheet" type="text/css" href="http://iboulangeat.github.io/FateHD/css/adirondack.css"></style><style type="text/css">
+		 
+		@page {
+				  size:  1216px 684px; 
+				  margin: 0;
+		}
+		</style>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i|Quattrocento:400,700|Spectral:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.js" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>
+		<script src="http://iboulangeat.github.io/FateHD/js/auto-render.min.js"></script> 
+		<script src="http://iboulangeat.github.io/FateHD/js/story.js"></script>
+
+	</head>
+	<body class="ma0 bg-white section-slides page-kind-page is-page-true  feature-nohdr feature-math feature-math feature-nohighlight">
+		
+  
+
+		<main role="main">
+		
+    <textarea id="source">layout: true
+.footer[
+&lt;!-- - @DrIsaBlg --&gt;
+- &lt;i class=&#34;fab fa-github&#34;&gt;&lt;/i&gt;iboulangeat
+&lt;!-- - isabelle.boulangeat@irstea.fr --&gt;
+- 2019
+&lt;!-- - ![logo](/img/logo.jpg) --&gt;
+]
+&lt;!--  --&gt;
+
+---
+class: title, smokescreen, no-footer
+background-image: url(abandon.gif)
+# FATE-HD, a landscape simulation model
+
+---
+
+class: compact, img-left
+# FATE-HD, an hybrid model
+FATE-HD among DVMs
+&lt;br&gt;&lt;br&gt;
+![Image](FATE-among.png)
+.absolute.r-2.b-2[&lt;sub&gt;&lt;sup&gt;&lt;sup&gt;Boulangeat et al. 2014, GCB&lt;/sub&gt;&lt;/sup&gt;&lt;/sup&gt;]
+
+--
+
+A landscape model dealing with **forest and non-forests**
+
+- Response to climate (via Habitat model)
+- Vegetation diversity (PFG)
+- Simpified population dynamics (competition for light, dispersal, demography)
+- Semi-quantitatif (easy to parameterize)
+- Disturbances (fire, grazing, mowing)
+
+
+---
+class:
+# FATE-HD model
+.absolute.r-2.b-2[&lt;sub&gt;&lt;sup&gt;&lt;sup&gt;Boulangeat et al. 2014, GCB&lt;/sub&gt;&lt;/sup&gt;&lt;/sup&gt;]
+
+![Image](FATE_pixel.png# absolute w-20pct l-60pct t-40pct)
+
+--
+![Image](FATE_demo.png# absolute w-20pct l-40pct t-40pct)
+.absolute.r-4.t-3[&lt;sub&gt;&lt;sup&gt;&lt;sup&gt;Germination &lt;br&gt; Recruitment&lt;br&gt; Growth&lt;br&gt;Survival&lt;br&gt;Fecundity&lt;/sub&gt;&lt;/sup&gt;&lt;/sup&gt;]
+
+
+---
+class:
+# FATE-HD model
+.absolute.r-2.b-2[&lt;sub&gt;&lt;sup&gt;&lt;sup&gt;Boulangeat et al. 2014, GCB&lt;/sub&gt;&lt;/sup&gt;&lt;/sup&gt;]
+![Image](FATE_demo.png# absolute w-20pct l-40pct t-40pct)
+.absolute.r-4.t-3[&lt;sub&gt;&lt;sup&gt;&lt;sup&gt;Germination &lt;br&gt; Recruitment&lt;br&gt; Growth&lt;br&gt;Survival&lt;br&gt;Fecundity&lt;/sub&gt;&lt;/sup&gt;&lt;/sup&gt;]
+
+![Image](FATE_abiotic.png# absolute w-20pct r-6 t-1)
+--
+![Image](FATE_biotic.png# absolute w-30pct l-4 t-5)
+--
+![Image](FATE_disp_all.png# absolute w-50pct r-4 b-10pct)
+
+---
+class:
+# FATE-HD model
+.absolute.r-2.b-2[&lt;sub&gt;&lt;sup&gt;&lt;sup&gt;Boulangeat et al. 2014, GCB&lt;/sub&gt;&lt;/sup&gt;&lt;/sup&gt;]
+![Image](FATE_demo.png# absolute w-20pct l-40pct t-40pct)
+
+![Image](FATE_abiotic.png# absolute w-20pct r-6 t-1)
+
+![Image](FATE_biotic.png# absolute w-30pct l-4 t-5)
+
+![Image](FATE_disp.png# absolute w-20pct r-6 b-10pct)
+
+![Image](FATE_dist.png# absolute w-33pct r-3 b-40pct)
+
+---
+class: col-2
+# Demography
+![Image](FATE_demo.png# relative w-80pct l-20pct t-20pct)
+- individuals grouped by cohorts
+- maturity attribute
+- longevity
+&lt;br&gt;&lt;br&gt;**seed production**
+- = f(longevity, maturity) renewal hypothesis
+- = f(habitat, stochasticity) yes/no
+---
+class: col-2
+# Habitat filter
+![Image](FATE_abiotic.png# relative w-80pct l-20pct t-20pct)
+- habitat model (SDM)
+- climate, soil, topography
+- stochasticity and step response function for **seed production** and **establishment**
+---
+class: col-2
+# Species interactions
+![Image](FATE_biotic.png# relative w-80pct l-20pct t-20pct)
+- competition for light
+- 3 light levels (low, medium, high)
+- growth = age to change of strata
+![Image](age_strata.png# relative w-80pct l-20pct t-20pct)
+- response to light distinct from germinant, juveniles or matures
+- maximum abundance in a pixel for each PFG
+---
+class: col-2
+# Dispersal
+![Image](dispersal2.png# relative w-80pct l-20pct t-20pct)
+
+- 50% of seed in a first circle having X pixels
+- 49% in a second circle, by packages of two pixels for a total of X pixels
+- 1% random in a larger buffer
+&lt;br&gt;&lt;br&gt;**parameters**
+- dispersal distances for 50, 99% of seeds
+- long distance
+- can be based on traits including the most efficient dispersal mode (not the most prevalent)
+
+---
+class: col-2
+# Disturbances
+![Image](PNE_map_pastures.png# relative w-80pct l-20pct t-20pct)
+- pasture maps and intensity
+- response of each PFG and stage (juvenile, mature, senescent)
+- % of mortality and % of no seed production (rejuvenate)
+---
+class:
+# Modular structure
+![Image](modularStruct.png# w-60pct)
+
+---
+class:
+# Parameterization : data
+![Image](paramData.png# w-80pct)
+
+---
+class:
+# Parameterization: from data to parameters
+![Image](parameters.png# w-80pct)
+
+
+---
+class: col-2
+# Simulating current distribution of PFG
+![Image](FATE_init.png# relative)
+- seeding until large trees reach their final strata
+- stabilization of the demography
+- remove trees in managed areas (pastures)
+- stabilization
+- remove again trees in managed areas
+
+---
+class:
+# Validation of the vegetation structure
+
+![Image](validation.png# w-80pct)
+
+---
+class:
+# FATE-HD vs SDM (at equilibrium)
+Refine PFGs distribution inside their habitat limits
+![Image](FATE_SDM.png# w-80pct)
+
+---
+class:
+# Simulate landscape dynamics under scenarios
+![Image](scenariosPNE.png# db w-80pct)
+.absolute.r-2.b-2[&lt;sub&gt;&lt;sup&gt;&lt;sup&gt;Boulangeat et al. 2014, Ecography&lt;/sub&gt;&lt;/sup&gt;&lt;/sup&gt;]
+
+---
+class:
+# Tree cover change over space and time
+![Image](legend_anim.png# absolute t-20pct l-10pct h-10pct)
+
+.absolute.l-4.t-30pct[Intensification]
+![Image](intens.gif# fixed b-2 l-4 w-34pct)
+&lt;!-- .fixed.b-2.l-4[&lt;video height=&#34;400&#34; autoplay&gt;&lt;source src=&#34;intens.mp4&#34; type=&#34;video/mp4&#34;&gt;&lt;/video&gt;] --&gt;
+.absolute.r-5.t-30pct[Abandonment]
+![Image](abandon.gif# fixed b-2 r-4 w-34pct)
+&lt;!-- .fixed.b-2.r-4[&lt;video height=&#34;400&#34; autoplay&gt;&lt;source src=&#34;abandon.mp4&#34; type=&#34;video/mp4&#34;&gt;&lt;/video&gt;] --&gt;
+.absolute.r-2.b-2[&lt;sub&gt;&lt;sup&gt;&lt;sup&gt;Boulangeat et al. 2014, Ecography&lt;/sub&gt;&lt;/sup&gt;&lt;/sup&gt;]
+
+---
+class:
+# Changes in regional diversity
+
+![Image](div_LU.png# w-80pct)
+.absolute.r-2.b-2[&lt;sub&gt;&lt;sup&gt;&lt;sup&gt;Boulangeat et al. 2014, Ecography&lt;/sub&gt;&lt;/sup&gt;&lt;/sup&gt;]
+
+---
+class:
+# Changes in regional diversity
+.absolute.r-2.b-2[&lt;sub&gt;&lt;sup&gt;&lt;sup&gt;Boulangeat et al. 2014, Ecography&lt;/sub&gt;&lt;/sup&gt;&lt;/sup&gt;]
+
+![Image](div_LU2.png# absolute w-40pct center)
+--
+
+.absolute.l-3.t-5[additive effects]
+--
+
+.absolute.r-3.t-5[multiplicative effects]
+
+---
+class:
+# Change in local diversity
+![Image](div-local.png# w-90pct)
+.absolute.r-2.b-2[&lt;sub&gt;&lt;sup&gt;&lt;sup&gt;Boulangeat et al. 2014, Ecography&lt;/sub&gt;&lt;/sup&gt;&lt;/sup&gt;]
+
+---
+class:
+# Diversity decomposition
+- change in **composition**
+- change in **abundances**
+.absolute.r-2.b-2[&lt;sub&gt;&lt;sup&gt;&lt;sup&gt;Boulangeat et al. 2014, Ecography&lt;/sub&gt;&lt;/sup&gt;&lt;/sup&gt;]
+
+--
+
+\\[
+^2D = ^0D \times EF
+\\]
+
+--
+\\( ^0D = \\) richness -&gt; beta = compositional turnover
+
+\\( EF =\\) evenness factor -&gt; beta = abundances re-arrangement
+
+
+---
+class: fit-h1, no-footer
+# Changes over time, elevation and diversity dimensions
+![Image](div-decomp.png)
+.absolute.r-2.b-2[&lt;sub&gt;&lt;sup&gt;&lt;sup&gt;Boulangeat et al. 2014, Ecography&lt;/sub&gt;&lt;/sup&gt;&lt;/sup&gt;]
+
+---
+class: fit-h1
+# Main highlights about the changes in functional diversity
+
+.absolute.r-2.b-2[&lt;sub&gt;&lt;sup&gt;&lt;sup&gt;Boulangeat et al. 2014, Ecography&lt;/sub&gt;&lt;/sup&gt;&lt;/sup&gt;]
+--
+&lt;br&gt;
+**Effet of human land-use:**
+Heterogeneity (beta) in average decreases in case of tree colonization but increases in case of habitat loss
+
+**Effect of different PFG assemblages:**
+The diversity response depends on elevation
+
+**Interaction between drivers:**
+Multiplicative effects are found when land abandonment is combined with climate change
+
+&lt;!-- ========================================================================== --&gt;
+
+---
+
+class: no-footer
+background-image: url(marais_acide_lautaret.JPG)
+# Thanks
+Damien, Pauline, Maya, Wilfried
+&lt;br&gt; Richard, Cédric, Sylvain, Jérémie, Pascal, Rolland
+</textarea>
+    <script type="text/javascript" src="http://iboulangeat.github.io/FateHD/js/qrcode.js"></script>
+    <script src="http://iboulangeat.github.io/FateHD/js/remark.js"></script>
+    <script>
+      var slideshow = remark.create({
+          ratio: "16:9", 
+         navigation: {
+            scroll: false
+         },
+         countIncrementalSlides: false,
+         slideNumberFormat: '%current%',
+			highlightLanguage: "xaprb",
+			placeholder: "dummy value to end the list without a comma"
+      });
+
+		
+		
+		$(".remark-slide-content.fit-h1 h1").each(function(i, e) {
+			var $e = $(e);
+			var $p = $e.closest('div.remark-slide-container');
+			var needsToggle = !$p.hasClass('remark-visible');
+			if ( needsToggle ) $p.toggleClass('remark-visible');
+			while (e.scrollHeight > e.clientHeight + 1 && $e.css('font-size') != '1px') {
+				$e.css('font-size', (parseInt($e.css('font-size')) - 1) + "px");
+				
+				
+			}
+			if ( needsToggle ) $p.toggleClass('remark-visible');
+		});
+
+		$( function() {
+			if ( $( "body.feature-qrcode:not(.feature-noqrcode)" ).length ) {
+				if ( $( ".qrcode" ).length ) {
+					new QRCode($(".qrcode")[0], {
+						"useSVG": true,
+						"text": window.location.href.replace(/#\d*$/, "")
+					});
+				}
+			}
+		});
+
+    </script>
+
+		</main>
+		
+  
+
+		
+		
+  
+
+	
+	
+	</body>
+</html>
