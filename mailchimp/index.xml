@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Slides </title>
-		<link>http://iboulangeat.github.io/FateHD/mailchimp/index.xml</link>
+		<link>http://iboulangeat.github.io/fatepresentations/mailchimp/index.xml</link>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<author>Isabelle Boulangeat</author>
@@ -11,31 +11,31 @@
 		
 		<item>
 			<title>FATE and soil</title>
-			<link>http://iboulangeat.github.io/FateHD/slides/fatesoil/</link>
+			<link>http://iboulangeat.github.io/fatepresentations/slides/fatesoil/</link>
 			<pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
 			<author>Isabelle Boulangeat</author>
-			<guid>http://iboulangeat.github.io/FateHD/slides/fatesoil/</guid>
-			<media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://iboulangeat.github.io/FateHD/img/default-header-img.tn-500x500.jpg" medium="image" type="image/jpg" width="100" height="100" />
+			<guid>http://iboulangeat.github.io/fatepresentations/slides/fatesoil/</guid>
+			<media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://iboulangeat.github.io/fatepresentations/img/default-header-img.tn-500x500.jpg" medium="image" type="image/jpg" width="100" height="100" />
 			<description>%!s(&lt;nil&gt;)&lt;br&gt;Premises of a soil module</description>
 		</item>
 		
 		<item>
 			<title>Plant functional groups</title>
-			<link>http://iboulangeat.github.io/FateHD/slides/pfg/</link>
+			<link>http://iboulangeat.github.io/fatepresentations/slides/pfg/</link>
 			<pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
 			<author>Isabelle Boulangeat</author>
-			<guid>http://iboulangeat.github.io/FateHD/slides/pfg/</guid>
-			<media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://iboulangeat.github.io/FateHD/img/default-header-img.tn-500x500.jpg" medium="image" type="image/jpg" width="100" height="100" />
+			<guid>http://iboulangeat.github.io/fatepresentations/slides/pfg/</guid>
+			<media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://iboulangeat.github.io/fatepresentations/img/default-header-img.tn-500x500.jpg" medium="image" type="image/jpg" width="100" height="100" />
 			<description>%!s(&lt;nil&gt;)&lt;br&gt;How to make plant functional groups</description>
 		</item>
 		
 		<item>
 			<title>The model FATE-HD</title>
-			<link>http://iboulangeat.github.io/FateHD/slides/fatehd/</link>
+			<link>http://iboulangeat.github.io/fatepresentations/slides/fatehd/</link>
 			<pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
 			<author>Isabelle Boulangeat</author>
-			<guid>http://iboulangeat.github.io/FateHD/slides/fatehd/</guid>
-			<media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://iboulangeat.github.io/FateHD/img/default-header-img.tn-500x500.jpg" medium="image" type="image/jpg" width="100" height="100" />
+			<guid>http://iboulangeat.github.io/fatepresentations/slides/fatehd/</guid>
+			<media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://iboulangeat.github.io/fatepresentations/img/default-header-img.tn-500x500.jpg" medium="image" type="image/jpg" width="100" height="100" />
 			<description>%!s(&lt;nil&gt;)&lt;br&gt;Presentation of the model FATE-HD</description>
 		</item>
 		

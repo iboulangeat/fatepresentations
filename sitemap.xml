@@ -3,60 +3,60 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://iboulangeat.github.io/FateHD/mailchimp/index.xml</loc>
+    <loc>http://iboulangeat.github.io/fatepresentations/mailchimp/index.xml</loc>
   </url>
   
   <url>
-    <loc>http://iboulangeat.github.io/FateHD/categories/</loc>
+    <loc>http://iboulangeat.github.io/fatepresentations/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://iboulangeat.github.io/FateHD/slides/fatesoil/</loc>
+    <loc>http://iboulangeat.github.io/fatepresentations/slides/fatesoil/</loc>
   </url>
   
   <url>
-    <loc>http://iboulangeat.github.io/FateHD/slides/fatesoil/</loc>
+    <loc>http://iboulangeat.github.io/fatepresentations/slides/fatesoil/</loc>
   </url>
   
   <url>
-    <loc>http://iboulangeat.github.io/FateHD/slides/fatehd/</loc>
+    <loc>http://iboulangeat.github.io/fatepresentations/slides/fatehd/</loc>
   </url>
   
   <url>
-    <loc>http://iboulangeat.github.io/FateHD/list_of_talks/</loc>
+    <loc>http://iboulangeat.github.io/fatepresentations/list_of_talks/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://iboulangeat.github.io/FateHD/slides/pfg/</loc>
+    <loc>http://iboulangeat.github.io/fatepresentations/slides/pfg/</loc>
   </url>
   
   <url>
-    <loc>http://iboulangeat.github.io/FateHD/slides/pfg/</loc>
+    <loc>http://iboulangeat.github.io/fatepresentations/slides/pfg/</loc>
   </url>
   
   <url>
-    <loc>http://iboulangeat.github.io/FateHD/search/</loc>
+    <loc>http://iboulangeat.github.io/fatepresentations/search/</loc>
   </url>
   
   <url>
-    <loc>http://iboulangeat.github.io/FateHD/</loc>
+    <loc>http://iboulangeat.github.io/fatepresentations/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://iboulangeat.github.io/FateHD/slides/</loc>
+    <loc>http://iboulangeat.github.io/fatepresentations/slides/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://iboulangeat.github.io/FateHD/tags/</loc>
+    <loc>http://iboulangeat.github.io/fatepresentations/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://iboulangeat.github.io/FateHD/slides/fatehd/</loc>
+    <loc>http://iboulangeat.github.io/fatepresentations/slides/fatehd/</loc>
   </url>
   
 </urlset>
