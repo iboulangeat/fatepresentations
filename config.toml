@@ -1,4 +1,4 @@
-baseURL = "http://iboulangeat.github.io/FateHD"
+baseURL = "http://iboulangeat.github.io/fatepresentations"
 
 title = "Slides"
 theme = "story"
@@ -24,4 +24,3 @@ paginate = 10
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   taxonomyTerm = ["HTML", "RSS"]
-theme = "story"
