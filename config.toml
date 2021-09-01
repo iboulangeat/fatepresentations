@@ -1,0 +1,27 @@
+baseURL = "http://iboulangeat.github.io/FateHD"
+
+title = "Slides"
+theme = "story"
+canonifyURLs = true
+# publishDir = "docs"
+paginate = 10
+# buildFuture = false
+
+
+[[menu.social]]
+  name = "GitHub"
+  title = "fab fa-github-square"
+  url = "https://github.com/iboulangeat"
+
+[params]
+  author = "Isabelle Boulangeat"
+  twitter = "DrIsaBlg"
+  classes = ["feature-nohdr", "feature-math"]
+
+[outputs]
+  home = ["HTML", "JSON", "RSS"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML", "RSS"]
+theme = "story"
